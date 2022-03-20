@@ -26,7 +26,7 @@ export const COLUMNS: Column<ColumnsPokemons>[] = [
     Cell: ({ value }: Cell) => (
       <div>
         <RouteLink to={`/pokemon/${value?.name}`}>
-          <Text fontSize="xl">show</Text>
+          <Text fontSize="xl">Details</Text>
         </RouteLink>
       </div>
     ),

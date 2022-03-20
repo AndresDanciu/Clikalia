@@ -1,7 +1,7 @@
 import React from 'react';
 import DataTable from './components/DataTable';
 
-const HomePokemons: React.FC = () => {
+const PokemonsHome: React.FC = () => {
   return (
     <>
       <DataTable />
@@ -9,4 +9,4 @@ const HomePokemons: React.FC = () => {
   );
 };
 
-export default HomePokemons;
+export default PokemonsHome;

@@ -1,6 +1,6 @@
 import { Layout, Loading } from 'components';
 import { NotFound } from 'components/errors';
-import HomePokemons from 'features/homePokemons/Index';
+import PokemonsHome from 'features/pokemonsHome/Index';
 import * as React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ function MainRoutes() {
     <Layout>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePokemons />} />
+          <Route path="/" element={<PokemonsHome />} />
           <Route
             path="/pokemon/:name"
             element={

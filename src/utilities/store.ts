@@ -1,7 +1,7 @@
 import { Action, configureStore, ConfigureStoreOptions, ThunkAction } from '@reduxjs/toolkit';
-import { pokemonsApi } from 'features/homePokemons/services/pokemonsApi';
 import moveSlice from 'features/pokemonDetails/services/movesSlice';
 import { pokemonDetailsApi } from 'features/pokemonDetails/services/pokemonDetailsApi';
+import { pokemonsApi } from 'features/pokemonsHome/services/pokemonsApi';
 
 const configureAppStore = (options?: ConfigureStoreOptions['preloadedState'] | undefined) =>
   configureStore({
