@@ -1,0 +1,11 @@
+// Version mobile
+.container {
+    // display: flex;
+}
+
+//Version desktop and tablet
+@media only screen and (min-width: 46.875em) {
+    .container {
+         // display: flex;
+    }
+}

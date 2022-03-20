@@ -1,0 +1,65 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint"],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "plugin:sonarjs/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "prefer-destructuring": ["warn"],
+    "react/no-array-index-key": ["warn"],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "react/destructuring-assignment": "off",
+    "arrow-body-style": "off",
+    "no-console": "warn",
+    "max-lines-per-function": ["warn", 170],
+    "max-len": [
+      "warn",
+      {
+        "code": 130,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true,
+        "ignoreUrls": true
+      }
+    ],
+    "sonarjs/no-duplicate-string": "warn",
+    "object-curly-spacing": ["warn", "always"],
+    "sonarjs/cognitive-complexity": ["warn", 6],
+    "@typescript-eslint/no-explicit-any": [
+      "warn",
+      {
+        "ignoreRestArgs": true
+      }
+    ]
+  }
+}
